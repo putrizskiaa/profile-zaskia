@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #df9c62, #ca447a);
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  padding: 60px 20px;
+  position: relative;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  text-align: left;
+}
+
+.card h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #eee;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
