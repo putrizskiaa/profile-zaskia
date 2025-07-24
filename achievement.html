@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PORTOFOLIO | ZASKIA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<section class="achieve-page">
+  <img src="sertif.bootcamp.BD.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
+  <img src="sertif.bootcamp.myskill.excel.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
+</section>
+
+<!-- Pop-up gambar besar -->
+<div id="popup-container" class="popup-container" onclick="hidePopup()" style="display:none;">
+  <img id="popup-img" src="" alt="Sertifikat Besar">
+</div>
+
+<script>
+  function showPopup(src) {
+    document.getElementById("popup-img").src = src;
+    document.getElementById("popup-container").style.display = "flex";
+  }
+
+  function hidePopup() {
+    document.getElementById("popup-container").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
