@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url(bgbunga.jpeg)no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.aboutme, .skill {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, #cf92a9, #a42054) ;
+}
+
+.aboutme {
+  background-color: #e498b6;
+}
+
+.skill {
+  background: linear-gradient(to right,  #cf92a9, #a42054);
+  align-items: center;
+  width: 100%;
+}
+
+/* Animasi berkedut saat hover */
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-3px, 0px); }
+  40% { transform: translate(3px, 0px); }
+  60% { transform: translate(-2px, 0px); }
+  80% { transform: translate(2px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.aboutme:hover,
+.skill:hover {
+  animation: shake 0.3s;
+}
+
+ .skill ul {
+    text-align: left;
+  }
+
+/* kotak card sertifikat */
+.popup-img-wrapper {
+ margin-top: 1cm;
+ display: flex;
+ justify-content: center;
+}
+
+/* Kotak/card untuk gambar */
+.popup-card {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 15px;
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ width: fit-content;
+ transition: transform 0.2s;
+}
+
+/* Gambar kecil di dalam kotak */
+.popup-img {
+ width: 200px;
+ cursor: pointer;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+ border-radius: 10px;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efek animasi saat hover */
+.popup-img:hover {
+ transform: scale(1.05);
+ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Efek saat diklik */
+.popup-img:active {
+ transform: scale(0.95);
+}
+
+/* Kontainer untuk popup besar */
+.popup-container {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.8);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 999;
+}
+
+/* Gambar besar di dalam popup */
+.popup-container img {
+ max-width: 90%;
+ max-height: 90%;
+ border-radius: 10px;
+}
+
+/* informasi ttg gunadarma */
+.gunadarma {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #fefdfd, #e498b6); /* pink-putih */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Animasi berkedut */
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-3px, 0px); }
+  40% { transform: translate(3px, 0px); }
+  60% { transform: translate(-2px, 0px); }
+  80% { transform: translate(2px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.gunadarma:hover {
+  animation: shake 0.3s;
+}
+
+.myproject {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #fefdfd, #e498b6); /* pink-putih */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-3px, 0px); }
+  40% { transform: translate(3px, 0px); }
+  60% { transform: translate(-2px, 0px); }
+  80% { transform: translate(2px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.myproject:hover {
+  animation: shake 0.3s;
+
+.judul {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: hsla(0, 20%, 96%, 0.92);
+}
+
+
+/* Container utama */
+.contact-container {
+ text-align: center;
+ margin-top: 60px;
+}
+
+/* Judul */
+.contact-container h3 {
+ font-size: 1.5rem;
+ color: #ffffff;
+ margin-bottom: 16px;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Kotak ikon */
+.contact-box {
+ background: rgba(255, 255, 255, 0.25); /* transparan cerah */
+ backdrop-filter: blur(14px);
+ -webkit-backdrop-filter: blur(14px);
+ padding: 12px 20px;
+ border-radius: 14px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 12px;
+ width: fit-content;
+ margin: 0 auto;
+ box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1),
+ inset 0 0 8px rgba(255, 255, 255, 0.3);
+ border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Ikon */
+.contact-box img {
+ width: 34px;
+ height: 34px;
+ filter: brightness(1.1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+ transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover efek */
+.contact-box img:hover {
+ transform: scale(1.2);
+ filter: brightness(1.4) drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+}
+

@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #df9c62, #ca447a);
+  background: url('Download\ maroon\ background\ high\ quality\ for\ free.jpeg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   text-align: center;
 }
@@ -21,16 +22,46 @@ body {
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.hero {
+ text-align: center;
+ padding: 40px;
 }
+
+.typing-text {
+ font-family: 'Poppins', sans-serif;
+ font-size: 32px;
+ white-space: nowrap;
+ overflow: hidden;
+ border-right: 2px solid #000;
+ width: fit-content;
+ margin: 0 auto;
+ animation: typing 3.5s steps(30), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+ from {
+ width: 0;
+ }
+ to {
+ width: 18ch;
+ }
+}
+
+@keyframes blink {
+ 50% {
+ border-color: transparent;
+ }
+}
+
 
 .description {
   max-width: 600px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
+  font-family: 'Times New Romand', Times, serif;
 }
 
 .card-container {
@@ -42,7 +73,7 @@ h1 {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color:(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px;
   width: 300px;
@@ -50,7 +81,7 @@ h1 {
 }
 
 .card h2 {
-  color: #fff;
+  color: #1a1919;
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -58,7 +89,7 @@ h1 {
 .card p, .card ul {
   font-size: 14px;
   line-height: 1.5;
-  color: #ddd;
+  color: #111010;
 }
 
 .card ul {
@@ -68,12 +99,13 @@ h1 {
 .btn {
   display: inline-block;
   margin-top: 15px;
-  background-color: #fff;
-  color: #333;
+  background-color: #ac702f;
+  color: #fcfbfb;
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif ;
   transition: background 0.3s;
 }
 
@@ -119,12 +151,13 @@ h1 {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
-  background-color: linear-gradient(to right, #fefdfd #e498b6)
+  background-color: #e498b6)
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   transition: background-color 0.3s ease;
+  
 }
 
   .skill {
@@ -180,4 +213,87 @@ h1 {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   transition: background-color 0.3s ease;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: hsla(0, 20%, 96%, 0.92);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Container utama */
+.contact-container {
+ text-align: center;
+ margin-top: 60px;
+}
+
+/* Judul */
+.contact-container h3 {
+ font-size: 1.5rem;
+ color: #ffffff;
+ margin-bottom: 16px;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Kotak ikon */
+.contact-box {
+ background: rgba(255, 255, 255, 0.25); /* transparan cerah */
+ backdrop-filter: blur(14px);
+ -webkit-backdrop-filter: blur(14px);
+ padding: 12px 20px;
+ border-radius: 14px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 3px;
+ width: fit-content;
+ margin: 0 auto;
+ box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1),
+ inset 0 0 8px rgba(255, 255, 255, 0.3);
+ border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Ikon */
+.contact-box img {
+ width: 34px;
+ height: 34px;
+ filter: brightness(1.1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+ transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover efek */
+.contact-box img:hover {
+ transform: scale(1.2);
+ filter: brightness(1.4) drop-shadow(0 0 5px rgba(255, 255, 255, 1));
 }
