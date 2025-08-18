@@ -8,9 +8,7 @@ body {
   text-align: center;
 }
 
-
-
-/* Responsive */
+/* Responsive navbar */
 @media screen and (max-width: 768px) {
   .card-container {
     flex-direction: column;
@@ -177,7 +175,7 @@ body {
 }
 
 
-/* Container utama */
+/* Container utama CONTACT ME ON */
 .contact-container {
  text-align: center;
  margin-top: 60px;
@@ -191,7 +189,7 @@ body {
  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Kotak ikon */
+/* Kotak contact me on */
 .contact-box {
  background: rgba(255, 255, 255, 0.25); /* transparan cerah */
  backdrop-filter: blur(14px);
@@ -209,7 +207,7 @@ body {
  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Ikon */
+/* icon png */
 .contact-box img {
  width: 34px;
  height: 34px;
@@ -217,7 +215,7 @@ body {
  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover efek */
+/* animasi contact me on */
 .contact-box img:hover {
  transform: scale(1.2);
  filter: brightness(1.4) drop-shadow(0 0 5px rgba(255, 255, 255, 1));

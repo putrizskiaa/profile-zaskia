@@ -11,33 +11,34 @@
     <h1>My Certificate</h1>
   </div>
 <section class="achieve-page">
-  <div class="popup-img-wrapper">
-    <div class="popup-card">
-      <img src="sertif.bootcamp.BD.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
-    </div>
-  </div>
+  <div class="popup-img-wrapper">
+    <div class="popup-card">
+      <img src="sertif.bootcamp.BD.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
+    </div>
+ </div>
 
-  <div class="popup-img-wrapper">
-    <div class="popup-card">
-      <img src="sertif.bootcamp.myskill.excel.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
-    </div>
-  </div>
+  <div class="popup-img-wrapper">
+    <div class="popup-card">
+      <img src="sertif.bootcamp.myskill.excel.jpg" alt="Sertifikat" class="popup-img" onclick="showPopup(this.src)">
+     </div>
+ </div>
 </section>
 
 <!-- Pop-up gambar besar -->
 <div id="popup-container" class="popup-container" onclick="hidePopup()" style="display:none;">
-  <img id="popup-img" src="" alt="Sertifikat Besar">
+  <img id="popup-img" src="" alt="Sertifikat Besar">
 </div>
+ 
 
 <script>
-  function showPopup(src) {
-    document.getElementById("popup-img").src = src;
-    document.getElementById("popup-container").style.display = "flex";
-  }
+ function showPopup(src) {
+    document.getElementById("popup-img").src = src;
+   document.getElementById("popup-container").style.display = "flex";
+  }
 
-  function hidePopup() {
-    document.getElementById("popup-container").style.display = "none";
-  }
+  function hidePopup() {
+   document.getElementById("popup-container").style.display = "none";
+  }
 </script>
 
 </body>
